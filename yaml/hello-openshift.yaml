@@ -31,4 +31,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: Donato just deployed this on Openshift!
+          value: Donato just deployed this on Openshift !
