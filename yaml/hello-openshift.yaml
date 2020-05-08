@@ -47,11 +47,3 @@ spec:
     name: hello-openshift
     weight: 100
   wildcardPolicy: None
-status:
-  ingress:
-    - conditions:
-          status: 'True'
-          type: Admitted
-      host: hello-openshift-default.192.168.0.10.nip.io
-      routerName: router
-      wildcardPolicy: None
