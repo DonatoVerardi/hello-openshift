@@ -1,0 +1,26 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app.kubernetes.io/instance: helloopenshift
+  name: hello-openshift
+  namespace: default
+  resourceVersion: '188253'
+  selfLink: /apis/route.openshift.io/v1/namespaces/default/routes/hello-openshift
+  uid: 5f545d95-8fd0-11ea-ae50-00155dd77c3d
+spec:
+  host: hello-openshift-default.192.168.0.10.nip.io
+  to:
+    kind: Service
+    name: hello-openshift
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress:
+    - conditions:
+        - lastTransitionTime: '2020-05-06T19:32:50Z'
+          status: 'True'
+          type: Admitted
+      host: hello-openshift-default.192.168.0.10.nip.io
+      routerName: router
+      wildcardPolicy: None
