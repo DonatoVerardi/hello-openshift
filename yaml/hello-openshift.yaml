@@ -50,7 +50,6 @@ spec:
 status:
   ingress:
     - conditions:
-        - lastTransitionTime: '2020-05-06T19:32:50Z'
           status: 'True'
           type: Admitted
       host: hello-openshift-default.192.168.0.10.nip.io
