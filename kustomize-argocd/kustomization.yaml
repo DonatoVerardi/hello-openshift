@@ -5,4 +5,4 @@ resources:
 - ./hello-openshift-app.yaml
 - ./tekton-app.yaml
 - ./strimzi-app.yaml
-- ./kafka-cluster-app.yaml
+#- ./kafka-cluster-app.yaml
