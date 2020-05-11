@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
 - ./hello-openshift-app.yaml
+- ./tekton-app.yaml
