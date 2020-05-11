@@ -1,0 +1,11 @@
+project: myproject
+source:
+  repoURL: 'https://github.com/DonatoVerardi/hello-openshift'
+  path: kustomize
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: myproject
+syncPolicy:
+  automated:
+    prune: true

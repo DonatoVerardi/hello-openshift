@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-openshift
+spec:
+  project: myproject
+  source:
+    repoURL: 'https://github.com/DonatoVerardi/hello-openshift'
+    path: kustomize
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myproject
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
