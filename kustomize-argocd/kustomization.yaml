@@ -3,12 +3,7 @@ kind: Kustomization
 
 resources:
 - ./hello-openshift-app.yaml
-<<<<<<< HEAD
 - ./argo-app.yaml
-
-#- ./tekton-app.yaml
-=======
-- ./tekton-app.yaml
->>>>>>> c8080f223a3a13b55c224de28204faffacfed781
-#- ./strimzi-app.yaml
-#- ./kafka-cluster-app.yaml
+## - ./tekton-app.yaml
+## - ./strimzi-app.yaml
+## - ./kafka-cluster-app.yaml
