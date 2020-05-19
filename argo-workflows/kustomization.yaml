@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
 - argo-workflows.yaml
+- argo-workflows-route.yaml
 #- argo-workflow-svc.yaml
 #- argo-workflow-route.yaml
     
