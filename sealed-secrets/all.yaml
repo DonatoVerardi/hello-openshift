@@ -6,7 +6,7 @@ metadata:
   labels:
     name: sealed-secrets-controller
   name: sealed-secrets-controller
-  namespace: sealed-secrets
+  namespace: kube-system
 spec:
   ports:
   - port: 8080
@@ -22,7 +22,7 @@ metadata:
   labels:
     name: sealed-secrets-service-proxier
   name: sealed-secrets-service-proxier
-  namespace: sealed-secrets
+  namespace: kube-system
 rules:
 - apiGroups:
   - ""
@@ -42,7 +42,7 @@ metadata:
   labels:
     name: sealed-secrets-controller
   name: sealed-secrets-controller
-  namespace: sealed-secrets
+  namespace: kube-system
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -50,7 +50,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: sealed-secrets-controller
-  namespace: sealed-secrets
+  namespace: kube-system
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: Role
@@ -59,7 +59,7 @@ metadata:
   labels:
     name: sealed-secrets-key-admin
   name: sealed-secrets-key-admin
-  namespace: sealed-secrets
+  namespace: kube-system
 rules:
 - apiGroups:
   - ""
@@ -115,7 +115,7 @@ metadata:
   labels:
     name: sealed-secrets-controller
   name: sealed-secrets-controller
-  namespace: sealed-secrets
+  namespace: kube-system
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -124,7 +124,7 @@ metadata:
   labels:
     name: sealed-secrets-controller
   name: sealed-secrets-controller
-  namespace: sealed-secrets
+  namespace: kube-system
 spec:
   minReadySeconds: 30
   replicas: 1
@@ -204,7 +204,7 @@ metadata:
   labels:
     name: sealed-secrets-service-proxier
   name: sealed-secrets-service-proxier
-  namespace: sealed-secrets
+  namespace: kube-system
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -228,4 +228,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: sealed-secrets-controller
-  namespace: sealed-secrets
+  namespace: kube-system
