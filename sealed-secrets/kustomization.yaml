@@ -7,4 +7,5 @@ resources:
 - ./sealed-secrets-role.yaml
 - ./sealed-secrets-sa.yaml
 - ./sealed-secrets-svc.yaml
+- ./sealed-secrets-clusterrole.yaml
     
