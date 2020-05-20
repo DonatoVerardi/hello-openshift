@@ -5,5 +5,6 @@ resources:
 - ./minio-pvc.yaml
 - ./minio-deployment.yaml
 - ./minio-svc.yaml
+- ./minio-route.yaml
 #- minio-route.yaml
     
