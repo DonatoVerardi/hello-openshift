@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gauge-taiko
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: gauge-taiko
