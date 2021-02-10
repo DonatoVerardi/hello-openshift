@@ -6,6 +6,7 @@ resources:
 - ./argo-app.yaml
 - ./minio-app.yaml
 - ./sealed-secrets-app.yaml
+- ./gauge-taiko.yaml
 ## - ./tekton-app.yaml
 ## - ./strimzi-app.yaml
 ## - ./kafka-cluster-app.yaml
