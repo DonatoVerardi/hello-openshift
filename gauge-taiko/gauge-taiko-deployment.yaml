@@ -21,7 +21,7 @@ spec:
           claimName: gauge-taiko-reports-pv-claim
       containers:
       - name: gauge-taiko
-        image: donatoverardi/gauge-taiko:v1.0
+        image: donatoverardi/gauge-taiko:v1.0.0
         volumeMounts:
         # Volume 'reports' is mounted to path '/gauge/reports'
         - name: reports
