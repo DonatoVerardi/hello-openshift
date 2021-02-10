@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gauge-taiko
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/DonatoVerardi/hello-openshift'
+    path: gauge-taiko
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: gauge-taiko
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

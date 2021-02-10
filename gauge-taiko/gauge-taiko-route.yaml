@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app.kubernetes.io/instance: gauge-taiko
+  name: gauge-taiko
+  namespace: gauge-taiko
+spec:
+  host: gauge-taiko.192.168.0.10.nip.io
+  to:
+    kind: Service
+    name: gauge-taiko
+    weight: 100
+  wildcardPolicy: None
