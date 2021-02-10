@@ -23,10 +23,10 @@ spec:
       containers:
       - name: gauge-taiko
         image: donatoverardi/gauge-taiko:v1.0.0
-        volumeMounts:
+        #volumeMounts:
         # Volume 'reports' is mounted to path '/gauge/reports'
-        - name: reports
-          mountPath: "/gauge/reports"
+        #- name: reports
+        #  mountPath: "/gauge/reports"
         #ports:
         #- containerPort: 8080
         #env:
