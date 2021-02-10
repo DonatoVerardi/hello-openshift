@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
 - ./gauge-taiko-sa.yaml
-- ./gauge-taiko-pvc.yaml
+#- ./gauge-taiko-pvc.yaml
 - ./gauge-taiko-deployment.yaml
 #- ./gauge-taiko-svc.yaml
 #- ./gauge-taiko-route.yaml

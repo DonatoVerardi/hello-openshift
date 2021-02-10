@@ -14,12 +14,12 @@ spec:
     spec:
       # Volumes used by this deployment
       serviceAccount: gauge
-      volumes:
-      - name: reports
-        # This volume is based on PVC
-        persistentVolumeClaim:
-          # Name of the PVC created earlier
-          claimName: gauge-taiko-reports-pv-claim
+      #volumes:
+      #- name: reports
+      #  # This volume is based on PVC
+      #  persistentVolumeClaim:
+      #    # Name of the PVC created earlier
+      #    claimName: gauge-taiko-reports-pv-claim
       containers:
       - name: gauge-taiko
         image: donatoverardi/gauge-taiko:v1.0.0
