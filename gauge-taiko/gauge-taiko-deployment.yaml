@@ -15,7 +15,6 @@ spec:
       # Volumes used by this deployment
       serviceAccount: gauge
       securityContext:
-          runAsUser: gauge
           fsGroup: 1001
       volumes:
       - name: reports
