@@ -12,3 +12,6 @@ spec:
     # This is the request for storage. Should be available in the cluster.
     requests:
       storage: 1Gi
+  storageClassName: slow
+  selector:
+    name: reports
