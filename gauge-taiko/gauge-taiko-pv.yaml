@@ -3,6 +3,7 @@ kind: PersistentVolume
 metadata:
   name: reports
   labels:
+    app: gauge-taiko
     hello: world
 spec:
   capacity:

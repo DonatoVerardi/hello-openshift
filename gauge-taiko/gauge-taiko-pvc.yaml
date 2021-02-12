@@ -3,6 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   # This name uniquely identifies the PVC. This is used in deployment.
   name: gauge-taiko-reports-pv-claim
+  labels:
+    app: gauge-taiko
+    hello: world
 spec:
   # Read more about access modes here: http://kubernetes.io/docs/user-guide/persistent-volumes/#access-modes
   accessModes:
