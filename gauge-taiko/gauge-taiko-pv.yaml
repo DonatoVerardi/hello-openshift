@@ -9,6 +9,6 @@ spec:
     storage: 1Gi
   accessModes:
   - ReadWriteMany
-  storageClassName: slow
+  storageClassName: manual
   hostPath:
     path: /mnt/sda1/var/lib/minishift/openshift.local.volumes/pv/reports
