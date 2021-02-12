@@ -4,3 +4,4 @@ metadata:
   name: gauge
   labels:
     app: gauge-taiko
+    hello: world
