@@ -14,4 +14,5 @@ spec:
       storage: 1Gi
   storageClassName: slow
   selector:
-    name: reports
+    matchLabels:
+      hello: world

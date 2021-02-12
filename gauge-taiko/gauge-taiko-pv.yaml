@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: reports
   labels:
-    type: local
+    hello: world
 spec:
   capacity:
     storage: 1Gi
