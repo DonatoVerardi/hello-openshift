@@ -9,6 +9,6 @@ spec:
   host: gauge-taiko.192.168.0.10.nip.io
   to:
     kind: Service
-    name: nginx
+    name: gauge-taiko-nginx
     weight: 100
   wildcardPolicy: None

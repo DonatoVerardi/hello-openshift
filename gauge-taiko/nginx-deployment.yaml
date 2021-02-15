@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gauge-taiko-nginx
+  labels:
+    app: gauge-taiko
+    hello: world
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gauge-taiko-nginx
+  template:
+    metadata:
+      labels:
+        app: gauge-taiko-nginx
+    spec:
+      # Volumes used by this deployment
+      serviceAccount: gauge
+
+      volumes:
+      - name: reports
+        # This volume is based on PVC
+        persistentVolumeClaim:
+          # Name of the PVC created earlier
+          claimName: gauge-taiko-reports-pv-claim
+      containers:      
+      - name: nginx
+        image: bitnami/nginx:latest
+        ports:
+        - containerPort: 8080
