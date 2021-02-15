@@ -12,6 +12,6 @@ resources:
 
 
 configMapGenerator:
-  - name: my_server_block
+  - name: my-server-block
     files:
       - ./files/my_server_block.conf
