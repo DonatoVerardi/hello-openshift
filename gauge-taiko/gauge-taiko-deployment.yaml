@@ -37,3 +37,7 @@ spec:
         #env:
         #- name: MESSAGE
         #  value: Donato just deployed this on Openshift!
+      - name: nginx
+        image: bitname/nginx:latest
+        ports:
+        - containerPort: 8080
