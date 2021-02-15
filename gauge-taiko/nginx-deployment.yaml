@@ -24,6 +24,9 @@ spec:
         persistentVolumeClaim:
           # Name of the PVC created earlier
           claimName: gauge-taiko-reports-pv-claim
+      - name: my-server-block
+        configMap:
+          name: my-server-block
       containers:      
       - name: nginx
         image: bitnami/nginx:latest
@@ -36,7 +39,4 @@ spec:
           readOnly: false
         - name: my-server-block
           mountPath: /opt/bitnami/nginx/conf/server_blocks/my_server_block.conf
-      volumes:
-        - name: my-server-block
-          configMap:
-            name: my-server-block
+
