@@ -29,3 +29,8 @@ spec:
         image: bitnami/nginx:latest
         ports:
         - containerPort: 8080
+        volumeMounts:
+        # Volume 'reports' is mounted to path '/gauge/reports'
+        - name: reports
+          mountPath: "/app"
+          readOnly: false
