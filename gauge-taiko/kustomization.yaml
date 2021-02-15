@@ -6,6 +6,7 @@ resources:
 - ./gauge-taiko-pv.yaml
 - ./gauge-taiko-pvc.yaml
 - ./gauge-taiko-deployment.yaml
+- ./nginx-deployment.yaml
 - ./gauge-taiko-svc.yaml
 - ./gauge-taiko-route.yaml
     
