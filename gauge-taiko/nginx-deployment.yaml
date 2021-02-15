@@ -34,7 +34,7 @@ spec:
         - name: reports
           mountPath: "/app"
           readOnly: false
-        - name: my_server_block
+        - name: my-server-block
           mountPath: /opt/bitnami/nginx/conf/server_blocks/my_server_block.conf
       volumes:
         - name: my-server-block
