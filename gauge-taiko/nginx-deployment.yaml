@@ -27,7 +27,6 @@ spec:
       - name: my-server-block
         configMap:
           name: my-server-block
-          value: "1"
       containers:      
       - name: nginx
         image: bitnami/nginx:latest
