@@ -39,4 +39,5 @@ spec:
           readOnly: false
         - name: my-server-block
           mountPath: /opt/bitnami/nginx/conf/server_blocks/my_server_block.conf
+            value: "1"
 
