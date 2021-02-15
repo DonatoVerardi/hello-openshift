@@ -9,4 +9,9 @@ resources:
 - ./nginx-deployment.yaml
 - ./gauge-taiko-svc.yaml
 - ./gauge-taiko-route.yaml
-    
+
+
+configMapGenerator:
+  - name: my_server_block
+    files:
+      - ./files/my_server_block.conf
