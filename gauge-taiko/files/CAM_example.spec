@@ -16,7 +16,7 @@ This is a context step that runs before every scenario
 * Enter "Verardi" in "Nachname"
 * Enter "donato.verardi@swisscom.com" in "E-Mail"
 * Enter " 78 123 45 67" in "Mobilnummer"
-* Click on "Nutzungsbestimmungen Donato"
+* Click on "Nutzungsbestimmungen"
 * Close tab
 * Click on "Weiter"
 
