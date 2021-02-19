@@ -35,7 +35,7 @@ spec:
           name: gauge-env
       containers:
       - name: gauge-taiko
-        image: donatoverardi/gauge-taiko:v1.0.1
+        image: donatoverardi/gauge-taiko:v1.0.0
         volumeMounts:
         # Volume 'reports' is mounted to path '/gauge/reports'
         - name: reports
