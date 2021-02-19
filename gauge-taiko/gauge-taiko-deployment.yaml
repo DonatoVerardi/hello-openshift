@@ -45,6 +45,7 @@ spec:
           mountPath: /gauge/specs/CAM_example.spec
           subPath: CAM_example.spec
         - name: gauge-tests
-          mountPath: /gauge/tests/
+          mountPath: /gauge/tests/step_implementation.js
+          subPath: step_implementation.js
         - name: gauge-env
           mountPath: /gauge/env/default
