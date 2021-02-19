@@ -49,6 +49,6 @@ spec:
           subPath: step_implementation.js
         - name: gauge-package
           mountPath: /gauge/package.json
-          subPath: step_implementation.js
+          subPath: package.json
         - name: gauge-env
           mountPath: /gauge/env/default
