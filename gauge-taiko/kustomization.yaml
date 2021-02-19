@@ -26,3 +26,6 @@ configMapGenerator:
   - name: gauge-tests
     files:
       - ./files/step_implementation.js
+  - name: gauge-package
+    files:
+      - ./files/package.json

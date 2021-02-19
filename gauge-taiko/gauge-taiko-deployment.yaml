@@ -35,7 +35,7 @@ spec:
           name: gauge-env
       containers:
       - name: gauge-taiko
-        image: donatoverardi/gauge-taiko:v1.0.2
+        image: donatoverardi/gauge-taiko:v1.0.3
         volumeMounts:
         # Volume 'reports' is mounted to path '/gauge/reports'
         - name: reports
@@ -46,6 +46,9 @@ spec:
           subPath: CAM_example.spec
         - name: gauge-tests
           mountPath: /gauge/tests/step_implementation.js
+          subPath: step_implementation.js
+        - name: gauge-package
+          mountPath: /gauge/package.json
           subPath: step_implementation.js
         - name: gauge-env
           mountPath: /gauge/env/default
