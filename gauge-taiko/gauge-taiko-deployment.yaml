@@ -47,8 +47,8 @@ spec:
         - name: gauge-tests
           mountPath: /gauge/tests/step_implementation.js
           subPath: step_implementation.js
+        - name: gauge-env
+          mountPath: /gauge/env/default
         - name: gauge-package
           mountPath: /gauge/package.json
           subPath: package.json
-        - name: gauge-env
-          mountPath: /gauge/env/default
