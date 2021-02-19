@@ -15,3 +15,14 @@ configMapGenerator:
   - name: my-server-block
     files:
       - ./files/my_server_block.conf
+  - name: gauge-specs
+    files:
+      - ./files/CAM_example.spec
+  - name: gauge-env
+    files:
+      - ./files/default.properties
+      - ./files/headless.properties
+      - ./files/js.properties
+  - name: gauge-tests
+    files:
+      - ./files/step_implementation.js

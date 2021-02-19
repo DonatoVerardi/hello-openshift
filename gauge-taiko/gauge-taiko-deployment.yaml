@@ -24,16 +24,26 @@ spec:
         persistentVolumeClaim:
           # Name of the PVC created earlier
           claimName: gauge-taiko-reports-pv-claim
+      - name: gauge-specs
+        configMap:
+          name: gauge-specs
+      - name: gauge-tests
+        configMap:
+          name: gauge-tests
+      - name: gauge-env
+        configMap:
+          name: gauge-env
       containers:
       - name: gauge-taiko
-        image: donatoverardi/gauge-taiko:v1.0.0
+        image: donatoverardi/gauge-taiko:v1.0.1
         volumeMounts:
         # Volume 'reports' is mounted to path '/gauge/reports'
         - name: reports
           mountPath: "/gauge/reports"
           readOnly: false
-        #ports:
-        #- containerPort: 8080
-        #env:
-        #- name: MESSAGE
-        #  value: Donato just deployed this on Openshift!
+        - name: gauge-specs
+          mountPath: /gauge/specs
+        - name: gauge-tests
+          mountPath: /gauge/tests
+        - name: gauge-env
+          mountPath: /gauge/env/default
