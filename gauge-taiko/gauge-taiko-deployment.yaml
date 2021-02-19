@@ -33,6 +33,9 @@ spec:
       - name: gauge-env
         configMap:
           name: gauge-env
+      - name: gauge-package
+        configMap:
+          name: gauge-package
       containers:
       - name: gauge-taiko
         image: donatoverardi/gauge-taiko:v1.0.3
